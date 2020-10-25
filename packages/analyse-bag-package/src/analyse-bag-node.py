@@ -10,7 +10,8 @@ import numpy as np
    printed according to the specific format outlined in Exercise 19.
 """
 
-# Extract the bag name from the runtime environment variable
+# Extract the bag name from the mounted volume using the runtime environment 
+# variable
 bag_name = os.environ["BAG_NAME"]
 bag = rosbag.Bag("mounted-vol/{}".format(bag_name))
 
